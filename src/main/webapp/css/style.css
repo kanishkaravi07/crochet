@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#ffe6f2;
+}
+
+header{
+    background:#ff4da6;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#ff80bf;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:black;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    display:inline-block;
+    width:300px;
+    margin:15px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0px 0px 8px gray;
+    overflow:hidden;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+}
+
+.card h3{
+    color:#ff1493;
+    margin:10px;
+}
+
+.card p{
+    padding:10px;
+}
+
+form{
+    width:400px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#ff1493;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e60073;
+}
+
+.success{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+footer{
+    margin-top:30px;
+    background:#ff4da6;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.feedback-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px gray;
+
+    text-align: center;
+}
+
+
+.feedback-section h2 {
+
+    color: #ff1493;
+
+    margin-bottom: 10px;
+}
+
+
+.feedback-section p {
+
+    margin-bottom: 20px;
+}
+
+
+.feedback-section form {
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 0;
+
+    box-shadow: none;
+}
+
+
+.feedback-section label {
+
+    display: block;
+
+    text-align: left;
+
+    margin-top: 12px;
+
+    font-weight: bold;
+}
+
+
+.feedback-section input,
+
+.feedback-section select,
+
+.feedback-section textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+.feedback-section textarea {
+
+    height: 100px;
+
+    resize: vertical;
+}
+
+
+.feedback-link {
+
+    display: inline-block;
+
+    margin: 10px;
+
+    padding: 10px 15px;
+
+    background: #ff1493;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+.feedback-link:hover {
+
+    background: #e60073;
+}
