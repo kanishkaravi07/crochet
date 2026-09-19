@@ -8,42 +8,29 @@
 
             <xs:sequence>
 
-                <xs:element
-                    name="feedback"
-                    minOccurs="0"
-                    maxOccurs="unbounded"
-                >
+                <xs:element name="feedback"
+                            minOccurs="0"
+                            maxOccurs="unbounded">
 
                     <xs:complexType>
 
                         <xs:sequence>
 
-                            <xs:element
-                                name="name"
-                                type="xs:string"
-                            />
+                            <xs:element name="name"
+                                        type="xs:string"/>
 
-                            <xs:element
-                                name="product"
-                                type="xs:string"
-                            />
-
+                            <xs:element name="product"
+                                        type="xs:string"/>
 
                             <xs:element name="rating">
 
                                 <xs:simpleType>
 
-                                    <xs:restriction
-                                        base="xs:integer"
-                                    >
+                                    <xs:restriction base="xs:integer">
 
-                                        <xs:minInclusive
-                                            value="1"
-                                        />
+                                        <xs:minInclusive value="1"/>
 
-                                        <xs:maxInclusive
-                                            value="5"
-                                        />
+                                        <xs:maxInclusive value="5"/>
 
                                     </xs:restriction>
 
@@ -51,11 +38,8 @@
 
                             </xs:element>
 
-
-                            <xs:element
-                                name="comment"
-                                type="xs:string"
-                            />
+                            <xs:element name="comment"
+                                        type="xs:string"/>
 
                         </xs:sequence>
 

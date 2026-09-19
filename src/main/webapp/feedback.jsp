@@ -1,109 +1,150 @@
-<!DOCTYPE html>
+<%@ page language="java"
+         contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
 
-    <title>Crochet Product Feedback</title>
+    <title>Customer Feedback</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: Arial;
-            background-color: #f5f5f5;
-            margin: 40px;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #fff0f5;
         }
 
         .container {
-            width: 500px;
-            background-color: white;
+            width: 90%;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .box {
+            background: white;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #e6b4ca;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #d63384;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #6b304b;
         }
 
         input, select, textarea {
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #e6a6bd;
+            border-radius: 8px;
+            font-size: 15px;
         }
 
-        input[type="submit"] {
-            background-color: #8b5e3c;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        a {
+        button, .button {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #d63384;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 15px;
         }
 
-    </style>
+        button:hover, .button:hover {
+            background: #b0256b;
+        }
 
+        .links {
+            text-align: center;
+            margin-top: 25px;
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <h2>Crochet Product Feedback</h2>
+    <h1>🧶 Crochet World</h1>
 
-    <form action="feedback" method="post">
+    <div class="box">
 
-        <label>Customer Name:</label>
+        <h2>💖 Give Your Feedback</h2>
 
-        <input type="text"
-               name="name"
-               required>
+        <form action="feedback" method="post">
 
+            <label for="name">Customer Name</label>
 
-        <label>Crochet Product Name:</label>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
 
-        <input type="text"
-               name="product"
-               required>
+            <label for="product">Product Name</label>
 
+            <input type="text"
+                   id="product"
+                   name="product"
+                   required>
 
-        <label>Rating:</label>
+            <label for="rating">Rating</label>
 
-        <select name="rating" required>
+            <select id="rating" name="rating" required>
+                <option value="">Choose Rating</option>
+                <option value="1">⭐ 1 Star</option>
+                <option value="2">⭐ 2 Stars</option>
+                <option value="3">⭐ 3 Stars</option>
+                <option value="4">⭐ 4 Stars</option>
+                <option value="5">⭐ 5 Stars</option>
+            </select>
 
-            <option value="">Select Rating</option>
+            <label for="comment">Comment</label>
 
-            <option value="1">1 - Poor</option>
+            <textarea id="comment"
+                      name="comment"
+                      rows="5"
+                      required></textarea>
 
-            <option value="2">2 - Average</option>
+            <button type="submit">
+                Submit Feedback
+            </button>
 
-            <option value="3">3 - Good</option>
+        </form>
 
-            <option value="4">4 - Very Good</option>
+        <div class="links">
+            <a href="feedback-search.jsp" class="button">
+                Search Feedback by Rating 🔍
+            </a>
 
-            <option value="5">5 - Excellent</option>
+            <br>
 
-        </select>
+            <a href="items.jsp" class="button">
+                Back to Items
+            </a>
+        </div>
 
-
-        <label>Comment:</label>
-
-        <textarea name="comment"
-                  rows="5"
-                  required></textarea>
-
-
-        <input type="submit"
-               value="Submit Feedback">
-
-    </form>
-
-
-    <a href="feedback_search.jsp">
-        Search Feedback Using XPath
-    </a>
+    </div>
 
 </div>
 
 </body>
-
 </html>
